@@ -1,0 +1,1790 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --display_nav: none;
+    --display_menulogo: block;
+}
+
+@font-face {
+    font-family: 'Bilbo Swash Caps';
+    src: url('../fonts/BilboSwashCaps-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat Alternatives';
+    src: url('../fonts/MontserratAlternates-Regular.woff');
+}
+
+@font-face {
+    font-family: 'Montserrat Alternatives';
+    src: url('../fonts/MontserratAlternates-Bold.woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff2');
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat Alternatives", sans-serif;
+    background-color: lightgray;
+}
+
+.body_inner {
+    background-color: white;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container, .aboutus_container {
+    max-width: 1238px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    margin: 90px 0 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #424242;
+}
+
+/* HEADER */
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 154px;
+}
+
+.header_logo {
+    font-family: "Bilbo Swash Caps", cursive;
+    font-size: 72px;
+    margin-right: 115px;
+}
+
+.menu_logo {
+    display: none;
+}
+
+.navbar_close {
+    display: none;
+}
+
+nav {
+    width: 100%;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar_link {
+    text-decoration: none;
+    color: #424242;
+}
+
+.navbar_link:hover {
+    border-bottom: 2px solid #71A27C;
+}
+
+.navbar_link:active {
+    opacity: 50%;
+}
+
+/* MAIN BLOCK */
+.mainblock {
+    background-image: url('../images/mainblock.png');
+    height: 881px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mainblock_title {
+    display: inline-block;
+    margin-top: 174px;
+    font-size: 64px;
+    color: #424242;
+}
+
+.mainblock_button {
+    display: inline-block;
+    font-size: 36px;
+    margin-top: 86px;
+    padding: 26px 32px;
+    background-color: #556867;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.mainblock_button:hover {
+    background-color: #71A27C
+}
+
+.mainblock_button:active {
+    box-shadow: inset 0 -6px 8px rgba(85, 104, 103, 0.7);
+}
+
+/* ABOUT US */
+.aboutus_items {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutus_image {
+    height: 180px;
+}
+
+.aboutus_text {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* BOUQUETS */
+.bouquets_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.bouquets_item {
+    margin-top: 37px;
+    background-color: #EBEBEE;
+    text-align: center;
+}
+
+.bouquets_image {
+    margin: 21px 25px 32px;
+}
+
+.bouquets_text {
+    font-size: 28px;
+}
+
+.bouquets_price {
+    margin-top: 26px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #71A27C;
+}
+
+.bouquets_button {
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    margin: 29px auto 41px;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 16px 64px 11px;
+    background-color: #556867;
+    box-shadow: 0 4px 4px rgba(43, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.bouquets_button:hover {
+    background-color: #71A27C;
+}
+
+.bouquets_button:active {
+    box-shadow: 0 4px 4px rgba(43, 0, 0, 0.25),
+    inset 0 -6px 8px rgba(85, 104, 103, 0.7);
+}
+
+/* PAYMENT */
+.payment_items {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.payment_item {
+    max-width: 30%;
+}
+
+.payment_image {
+    height: 200px;
+}
+
+.payment_header {
+    font-size: 38px;
+    font-weight: bold;
+    color: #556867;
+}
+
+.payment_text {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+/* REVIEWS */
+.reviews_slider {
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+    justify-content: space-between;
+}
+
+.reviews_arrowleft {
+    display: flex;
+    margin: 0 5px 0 100px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.reviews_arrowleft:hover, .reviews_arrowright:hover {
+    background-color: rgba(113, 162, 124, 0.5);
+    box-shadow: 0 4px 4px rgba(85, 104, 103, 0.25);
+    cursor: pointer;
+}
+
+.reviews_arrowleft:active, .reviews_arrowright:active {
+    background: #71A27C;
+}
+
+.reviews_arrowright {
+    display: flex;
+    margin: 0 100px 0 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.reviews_arrowleftimg {
+    padding: 17px 0 17px 25px;
+}
+
+.reviews_arrowrightimg {
+    transform: rotate(180deg);
+    padding: 17px 34px 17px 0;
+}
+
+.reviews_reviewbox0 {
+    display: flex;
+    max-width: 994px;
+    max-height: 549px;
+    background-color: #EBEBEE;
+}
+
+.reviews_reviewbox1, .reviews_reviewbox2 {
+    display: none;
+    max-width: 994px;
+    max-height: 549px;
+    background-color: #EBEBEE;
+}
+
+.reviews_info {
+    margin: 26px 23px 26px 48px;
+    text-align: center;
+}
+
+.reviews_whitebox {
+    padding-top: 100px;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(85, 104, 103, 0.25);
+    margin-top: 86px;
+    height: 403px;
+    max-width: 377px;
+}
+
+.reviews_textblock {
+    color: #424242;
+    font-size: 28px;
+}
+
+.reviews_name {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.reviews_review {
+    margin-top: 34px;
+}
+
+.reviews_photo {
+    position: relative;
+    bottom: 500px;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 174px;
+    height: 174px;
+}
+
+.reviews_bouquetcontainer {
+    margin: 26px 31px 26px 0;
+    width: 490px;
+    height: 490px;
+    box-shadow: 0 4px 4px rgba(85, 104, 103, 0.25);
+}
+
+.reviews_bouquetphoto {
+    width: 490px;
+    height: 490px;
+}
+
+/* ORDER */
+.order_box {
+    margin: 55px auto 0;
+    max-width: 1058px;
+}
+
+.order_textinput {
+    width: 100%;
+    font-family: "Montserrat Alternatives", sans-serif;
+    font-size: 36px;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 94px;
+}
+
+.order_textinput:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.order_title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.order_bouquetcheckboxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 85px;
+}
+
+.order_checkbox1, .order_checkbox2 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    width: 40%;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.order_oldcheckbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.order_customcheckbox {
+    background: url(../images/checkbox_empty.svg) no-repeat;
+    height: 34px;
+    width: 34px;
+}
+
+.order_oldcheckbox:checked + .order_customcheckbox {
+    background: url(../images/checkbox_checked.svg) no-repeat;
+}
+
+.order_checkboxtext {
+    margin-left: 32px;
+}
+
+.order_decorationradios {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 85px;
+}
+
+.order_radiobutton1, .order_radiobutton2 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    width: 40%;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.order_oldradiobutton {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.order_customradiobutton {
+    background: url(../images/radiobutton_empty.svg) no-repeat;
+    height: 34px;
+    width: 34px;
+}
+
+.order_oldradiobutton:checked + .order_customradiobutton {
+    background: url(../images/radiobutton_checked.svg) no-repeat;
+}
+
+.order_radiobuttontext {
+    margin-left: 32px;
+}
+
+.order_addition {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 85px;
+}
+
+.order_shipping {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 85px;
+}
+
+.order_dateandtime {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 93px;
+}
+
+.order_date {
+    width: 40%;
+}
+
+.order_dateinput {
+    font-family: "Montserrat Alternatives", sans-serif;
+    font-size: 36px;
+    width: 337px;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding-left: 20px;
+    background-image: url('../images/calendar.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: auto 80%;
+    max-height: 45px;
+}
+
+.order_dateinput:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.order_dateinput::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.order_time {
+    width: 40%;
+}
+
+select {
+    font-family: "Montserrat Alternatives", sans-serif;
+    font-size: 36px;
+    width: 337px;
+    border: 0;
+    border-bottom: 1px solid black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    background-image: url('../images/cross_time.svg');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: auto 40%;
+}
+
+select:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+textarea {
+    font-family: "Montserrat Alternatives", sans-serif;
+    font-size: 36px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 2px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+.order_smallcomment {
+    font-size: 18px;
+    margin: 21px 0 90px;
+}
+
+.order_finalblock {
+    margin: 0 214px;
+}
+
+.order_priceblock {
+    font-size: 48px;
+    font-weight: bold;
+    color: #71A27C;
+    padding-left: 15px;
+}
+
+.order_price {
+    font-size: 72px;
+}
+
+.order_buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 55px 0 90px;
+}
+
+.order_button {
+    font-family: "Montserrat Alternatives", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    padding: 27px 30px 25px;
+    background-color: #556867;
+    box-shadow: 0 4px 4px rgba(113, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.order_button:hover {
+    background-color: #71A27C;
+}
+
+.order_button:active {
+    box-shadow: 0 4px 4px rgba(43, 0, 0, 0.25),
+    inset 0 -6px 8px rgba(85, 104, 103, 0.7);
+}
+
+/* CONTACTS */
+.contacts {
+    position: relative;
+    height: 772px;
+}
+
+.contacts_map {
+    width: 100%;
+    height: 772px;
+}
+
+.contacts_box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 487px;
+    height: 471px;
+    background-color: #71A27C;
+}
+
+.contacts_container {
+    max-width: 310px;
+    margin: 0 auto;
+}
+
+.contacts_container1 {
+    margin-top: 53px;
+    font-size: 20px;
+    color: white;
+}
+
+.contacts_addressblock {
+    display: flex;
+    align-items: center;
+}
+
+.contacts_phoneblock {
+    display: flex;
+    align-items: center;
+    margin-top: 33px;
+}
+
+.contacts_container2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contacts_icon {
+    width: 33%;
+    margin-top: 35px;
+}
+
+.contacts_address, .contacts_phone {
+    margin-left: 25px;
+}
+
+.contacts_callbutton {
+    display: block;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #71A27C;
+    text-decoration: none;
+    padding: 18px 25px;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(43, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contacts_callbutton:active {
+    box-shadow: 0 4px 4px rgba(43, 0, 0, 0.25),
+    inset 0 -6px 8px rgba(85, 104, 103, 0.7);
+}
+
+/* FOOTER */
+footer {
+    background-color: #556867;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 127px;
+    color: white;
+}
+
+.footer_logo {
+    font-family: "Bilbo Swash Caps", cursive;
+    font-size: 48px;
+    margin-right: 115px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer_navbar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    width: 100%;
+}
+
+.footer_link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.footer_link:hover {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.footer_icon {
+    height: 20px;
+}
+
+.footer_number {
+    margin-left: 5px;
+}
+
+/* POPUP */
+.popup_call_invisible {
+    display: none;
+}
+
+.popup_call {
+    position: relative;
+    height: 582px;
+    width: 821px;
+    border-radius: 10px;
+    background-color: #EBEBEE;
+    margin: 0 auto;
+    padding-top: 54px;
+    text-align: center;
+}
+
+.popup_call .mfp-close {
+    display: none;
+}
+
+.popup_call_cross {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.popup_call_header {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.popup_call_content {
+    margin: 72px auto 0;
+    max-width: 520px;
+    font-size: 24px;
+}
+
+.popup_call_input {
+    width: 648px;
+    font-family: "Montserrat Alternatives", sans-serif;
+    font-size: 36px;
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: #EBEBEE;
+    margin-top: 55px;
+}
+
+.popup_call_input:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.popup_call_button {
+    font-family: "Montserrat Alternatives", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-top: 95px;
+    padding: 20px 36px;
+    background-color: #556867;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.popup_call_button:hover {
+    background-color: #71A27C;
+}
+
+.popup_call_button:active {
+    box-shadow: inset 0 -6px 8px rgba(85, 104, 103, 0.7);
+}
+
+/* ARROW UP */
+.arrowup {
+    display: flex;
+    position: fixed;
+    left: calc((100% - min(100%, 1440px)) / 2 + 50px);
+    bottom: 50px;
+    width: 105px;
+    height: 105px;
+    background-color: #71A27C;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px rgba(43, 0, 0, 0.25);
+}
+
+.arrowup:active {
+    box-shadow: 0 4px 4px rgba(43, 0, 0, 0.25),
+    inset 0 -6px 8px rgba(85, 104, 103, 0.7);
+}
+
+.arrowup_image {
+    padding: 0 17px;
+    width: 105px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .body_inner {
+        width: 768px;
+    }
+
+    .container {
+        max-width: 676px;
+    }
+
+    .title {
+        margin-top: 50px;
+        font-size: 36px;
+    }
+
+    /* HEADER */
+    .header_inner {
+        height: 85px;
+    }
+
+    .header_logo {
+        font-size: 48px;
+    }
+
+    .menu_logo {
+        display: var(--display_menulogo);
+        cursor: pointer;
+    }
+
+    nav {
+        display: var(--display_nav);
+        position: relative;
+        background-color: white;
+        width: 300px;
+        top: 120px;
+        left: 45px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .navbar_close {
+        display: block;
+        position: relative;
+        top: 53px;
+        left: 13px;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+    }
+
+    .navbar_li {
+        text-align: right;
+        margin: 20px 50px 21px auto;
+        width: 140px
+    }
+
+    .navbar_link {
+        text-decoration: none;
+        color: #424242;
+    }
+
+    .navbar_link:hover {
+        border-bottom: 0;
+        color: black;
+    }
+
+    .navbar_link:active {
+        opacity: 100%;
+    }
+
+    /* MAIN BLOCK */
+    .mainblock {
+        background-image: url('../images/mainblock_768.png');
+        height: 506px;
+    }
+
+    .mainblock_title {
+        margin-top: 106px;
+        font-size: 36px;
+    }
+
+    .mainblock_button {
+        font-size: 24px;
+        margin-top: 43px;
+        padding: 12px 20px;
+        border-radius: 10px;
+    }
+
+    /* ABOUT US */
+    .aboutus_container {
+        max-width: 470px;
+    }
+
+    .aboutus_item {
+        width: 170px;
+        margin-top: 22px;
+    }
+
+    .aboutus_items {
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+
+    .aboutus_image {
+        height: 140px;
+    }
+
+    .aboutus_text {
+        font-size: 18px;
+    }
+
+    /* BOUQUETS */
+    .bouquets_items {
+        margin-top: 8px;
+    }
+
+    .bouquets_item {
+        margin-top: 22px;
+    }
+
+    .bouquets_image {
+        margin: 17px 21px 26px;
+        width: 280px;
+    }
+
+    .bouquets_text {
+        font-size: 24px;
+    }
+
+    .bouquets_price {
+        margin-top: 23px;
+        font-size: 36px;
+    }
+
+    .bouquets_button {
+        margin: 24px auto 33px;
+        font-size: 30px;
+        padding: 13px 53px 13px;
+        border-radius: 10px;
+    }
+
+    /* PAYMENT */
+    .payment_items {
+        margin-top: 20px;
+    }
+
+    .payment_image {
+        height: 130px;
+    }
+
+    .payment_header {
+        font-size: 24px;
+    }
+
+    .payment_text {
+        font-size: 18px;
+    }
+
+    /* REVIEWS */
+    .reviews_slider {
+        margin-top: 30px;
+    }
+
+    .reviews_arrowleft {
+        margin-left: 40px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .reviews_arrowright {
+        margin-right: 40px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .reviews_arrowleftimg {
+        padding: 0;
+        margin-left: 18px;
+        width: 18px;
+    }
+
+    .reviews_arrowrightimg {
+        padding: 0;
+        margin-left: 22px;
+        width: 18px;
+    }
+
+    .reviews_reviewbox0, .reviews_reviewbox1, .reviews_reviewbox2 {
+        flex-direction: column;
+        width: 546px;
+        max-height: 694px;
+    }
+
+    .reviews_info {
+        margin: 25px 20px;
+        max-height: 267px;
+    }
+
+    .reviews_whitebox {
+        padding-top: 0;
+        margin: 0 0 0 66px;
+        height: 267px;
+        max-width: 440px;
+    }
+
+    .reviews_textblock {
+        font-size: 24px;
+        max-width: 312px;
+        margin-left: 90px;
+        padding-top: 44px;
+    }
+
+    .reviews_name {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+
+    .reviews_review {
+        margin-top: 34px;
+    }
+
+    .reviews_photo {
+        bottom: 203px;
+        right: 187px;
+        width: 138px;
+        height: 138px;
+    }
+
+    .reviews_bouquetcontainer {
+        margin: 0 20px 25px;
+        width: 506px;
+        height: 352px;
+        overflow: hidden;
+    }
+
+    .reviews_bouquetphoto {
+        width: 100%;
+        margin-top: -30px;
+    }
+
+    /* ORDER */
+    .order_box {
+        margin-top: 30px;
+        max-width: 635px;
+    }
+
+    .order_textinput {
+        height: 61px;
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+
+    .order_title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .order_titlebouquet {
+        margin-top: 14px;
+    }
+
+    .order_bouquetcheckboxes, .order_decorationradios, .order_addition, .order_shipping {
+        margin-bottom: 30px;
+    }
+
+    .order_checkbox1 {
+        font-size: 18px;
+        width: 43%;
+    }
+
+    .order_checkbox2 {
+        font-size: 18px;
+        width: 50%;
+    }
+
+    .order_checkboxtext {
+        margin-left: 30px;
+    }
+
+    .order_radiobutton1 {
+        font-size: 18px;
+        width: 43%;
+    }
+
+    .order_radiobutton2 {
+        font-size: 18px;
+        width: 50%;
+    }
+
+    .order_radiobuttontext {
+        margin-left: 30px;
+    }
+
+    .order_dateandtime {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 14px;
+    }
+
+    .order_date {
+        width: 43%;
+    }
+
+    .order_dateinput {
+        font-size: 24px;
+        width: 241px;
+        height: 30px;
+    }
+
+    .order_time {
+        width: 50%;
+    }
+
+    select {
+        font-size: 24px;
+        width: 241px;
+    }
+
+    textarea {
+        font-size: 24px;
+        margin-top: 16px;
+    }
+
+    .order_smallcomment {
+        margin-bottom: 23px;
+    }
+
+    .order_finalblock {
+        margin: 0 102px;
+    }
+
+    .order_priceblock {
+        font-size: 36px;
+        padding-left: 40px;
+    }
+
+    .order_price {
+        font-size: 48px;
+    }
+
+    .order_buttons {
+        display: flex;
+        justify-content: space-between;
+        margin: 44px 0 50px;
+    }
+
+    .order_button {
+        font-size: 24px;
+        padding: 11px 15px 10px;
+        border-radius: 10px;
+    }
+
+    /* CONTACTS */
+    .contacts, .contacts_map {
+        height: 553px;
+    }
+
+    .contacts_box {
+        width: 263px;
+        height: 266px;
+    }
+
+    .contacts_container {
+        max-width: 196px;
+    }
+
+    .contacts_container1 {
+        margin-top: 27px;
+        font-size: 14px;
+    }
+
+    .contacts_iconimage {
+        max-width: 16px;
+    }
+
+    .contacts_phoneblock {
+        margin-top: 18px;
+    }
+
+    .contacts_container2 {
+        margin-top: 13px;
+    }
+
+    .contacts_icon {
+        margin-top: 20px;
+    }
+
+    .contacts_address, .contacts_phone {
+        margin-left: 15px;
+    }
+
+    .contacts_callbutton {
+        margin-top: 21px;
+        font-size: 18px;
+        padding: 8px 5px;
+        border-radius: 7px;
+    }
+
+    /* FOOTER */
+    .footer_inner {
+        height: 97px;
+    }
+
+    .footer_logo {
+        font-size: 36px;
+        margin: 0 auto;
+    }
+
+    .footer_navbar {
+        display: none;
+    }
+
+    /* POPUP */
+    .popup_call {
+        height: 400px;
+        width: 563px;
+        padding-top: 37px;
+    }
+
+    .popup_call_cross {
+        top: 14px;
+        right: 14px;
+    }
+
+    .popup_call_crossimage {
+        width: 19px;
+    }
+
+    .popup_call_header {
+        font-size: 30px;
+    }
+
+    .popup_call_content {
+        margin-top: 50px;
+        max-width: 390px;
+        font-size: 18px;
+    }
+
+    .popup_call_input {
+        width: 335px;
+        font-size: 24px;
+        margin-top: 38px;
+    }
+
+    .popup_call_button {
+        font-size: 18px;
+        margin-top: 65px;
+        padding: 14px 18px;
+        border-radius: 10px;
+    }
+
+    /* ARROW UP */
+    .arrowup {
+        left: calc((100% - min(100%, 768px)) / 2 + 40px);
+        bottom: 40px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .arrowup_image {
+        padding: 0;
+        margin-left: 13px;
+        width: 43px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .body_inner {
+        width: 375px;
+    }
+
+    .container, .aboutus_container {
+        max-width: 309px;
+    }
+
+    .title {
+        margin-top: 30px;
+        font-size: 24px;
+    }
+
+    /* HEADER */
+    .header_inner {
+        height: 60px;
+    }
+
+    .header_logo {
+        font-size: 30px;
+    }
+
+    .menu_logo {
+        display: var(--display_menulogo);
+        cursor: pointer;
+    }
+
+    .menu_logoimage {
+        width: 32px;
+    }
+
+    nav {
+        display: var(--display_nav);
+        position: relative;
+        background-color: white;
+        width: 376px;
+        right: 221px;
+        top: 136px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+        margin: 0;
+        width: 376px;
+    }
+
+    .navbar_close {
+        display: block;
+        position: relative;
+        top: 53px;
+        left: 317px;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+    }
+
+    .navbar_li {
+        margin: 20px auto 21px;
+        width: 140px;
+        text-align: center;
+    }
+
+    .navbar_link {
+        text-decoration: none;
+        color: #424242;
+    }
+
+    .navbar_link:hover {
+        border-bottom: 0;
+        color: black;
+    }
+
+    .navbar_link:active {
+        opacity: 100%;
+    }
+
+    /* MAIN BLOCK */
+    .mainblock {
+        background-image: url('../images/mainblock_375.png');
+        height: 407px;
+    }
+
+    .mainblock_title {
+        margin-top: 47px;
+        font-size: 30px;
+        width: 330px;
+    }
+
+    .mainblock_button {
+        font-size: 24px;
+        margin-top: 50px;
+        padding: 12px 20px;
+        border-radius: 5px;
+    }
+
+    /* ABOUT US */
+    .aboutus_item {
+        width: 120px;
+        margin-top: 22px;
+    }
+
+    .aboutus_items {
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+
+    .aboutus_image {
+        height: 100px;
+    }
+
+    .aboutus_text {
+        font-size: 12px;
+    }
+
+    /* BOUQUETS */
+    .bouquets_items {
+        margin-top: 4px;
+    }
+
+    .bouquets_item {
+        margin-top: 11px;
+    }
+
+    .bouquets_image {
+        margin: 8px 10px 11px;
+        width: 128px;
+    }
+
+    .bouquets_text {
+        font-size: 12px;
+    }
+
+    .bouquets_price {
+        margin-top: 11px;
+        font-size: 16px;
+    }
+
+    .bouquets_button {
+        margin: 12px auto 15px;
+        font-size: 14px;
+        padding: 6px 24px 4px;
+        border-radius: 5px;
+    }
+
+    /* PAYMENT */
+    .payment_items {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .payment_item {
+        max-width: 100%;
+    }
+
+    .payment_image {
+        height: 130px;
+    }
+
+    .payment_header {
+        font-size: 20px;
+    }
+
+    .payment_text {
+        font-size: 14px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    /* REVIEWS */
+    .reviews_slider {
+        margin-top: 12px;
+        justify-content: space-evenly;
+    }
+
+    .reviews_arrowleft {
+        margin-left: 0;
+        height: 30px;
+        width: 30px;
+    }
+
+    .reviews_arrowright {
+        margin-right: 0;
+        height: 30px;
+        width: 30px;
+    }
+
+    .reviews_arrowleftimg {
+        padding: 0;
+        margin-left: 9px;
+        width: 10px;
+    }
+
+    .reviews_arrowrightimg {
+        padding: 0;
+        margin-left: 11px;
+        width: 10px;
+    }
+
+    .reviews_reviewbox0, .reviews_reviewbox1, .reviews_reviewbox2 {
+        flex-direction: column;
+        width: 283px;
+        max-height: 500px;
+    }
+
+    .reviews_info {
+        margin: 55px 20px 18px;
+        max-height: 169px;
+    }
+
+    .reviews_whitebox {
+        margin: 0;
+        padding: 0;
+        height: 169px;
+        max-width: 243px;
+    }
+
+    .reviews_textblock {
+        font-size: 24px;
+        max-width: 312px;
+    }
+
+    .reviews_name {
+        margin: 0;
+        padding-top: 50px;
+        font-size: 18px;
+    }
+
+    .reviews_review {
+        font-size: 14px;
+        margin-top: 9px;
+    }
+
+    .reviews_photo {
+        width: 80px;
+        height: 80px;
+        bottom: 209px;
+    }
+
+    .reviews_bouquetcontainer {
+        margin: 0 20px 15px;
+        width: 243px;
+        height: 243px;
+    }
+
+    .reviews_bouquetphoto {
+        width: 243px;
+        height: 243px;
+    }
+
+    /* ORDER */
+    .order_box {
+        margin-top: 30px;
+        max-width: 275px;
+    }
+
+    .order_textinput {
+        font-size: 14px;
+        margin-bottom: 30px;
+        width: 245px;
+    }
+
+    .order_title {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .order_titlebouquet {
+    }
+
+    .order_bouquetcheckboxes, .order_decorationradios, .order_addition, .order_shipping {
+        margin-bottom: 20px;
+    }
+
+    .order_customcheckbox {
+        width: 22px;
+        height: 22px;
+        background-size: 22px 22px;
+    }
+
+    .order_oldcheckbox:checked + .order_customcheckbox {
+        background-size: 22px 22px;
+    }
+
+    .order_checkbox1, .order_checkbox2 {
+        margin-left: 14px;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .order_checkboxtext {
+        margin-left: 22px;
+    }
+
+    .order_customradiobutton {
+        width: 22px;
+        height: 22px;
+        background-size: 22px 22px;
+    }
+
+    .order_radiobutton1, .order_radiobutton2 {
+        font-size: 12px;
+        margin-left: 14px;
+        width: 100%;
+    }
+
+    .order_oldradiobutton:checked + .order_customradiobutton {
+        background-size: 22px 22px;
+    }
+
+    .order_radiobuttontext {
+        margin-left: 22px;
+    }
+
+    .order_titledateandtime {
+        margin-bottom: 5px;
+    }
+
+    .order_dateandtime {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .order_date {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .order_dateinput {
+        padding-left: 0;
+        font-size: 14px;
+        width: 245px;
+        height: 25px;
+        background-position: 97%;
+    }
+
+    .order_time {
+        width: 100%;
+    }
+
+    select {
+        font-size: 14px;
+        width: 245px;
+        height: 25px;
+    }
+
+    textarea {
+        font-size: 14px;
+        margin-top: 0;
+        width: 245px;
+        height: 75px;
+    }
+
+    .order_smallcomment {
+        font-size: 10px;
+        margin: 14px 0 17px;
+    }
+
+    .order_finalblock {
+        margin: 0;
+    }
+
+    .order_priceblock {
+        font-size: 24px;
+        padding-left: 25px;
+    }
+
+    .order_price {
+        font-size: 24px;
+    }
+
+    .order_buttons {
+        display: flex;
+        justify-content: space-between;
+        margin: 16px 0 30px;
+    }
+
+    .order_button {
+        font-size: 13px;
+        padding: 8px 21px 8px;
+        border-radius: 10px;
+    }
+
+    /* CONTACTS */
+    .contacts {
+        position: static;
+        height: auto;
+    }
+
+    .contacts_map {
+        height: 292px;
+    }
+
+    .contacts_box {
+        position: static;
+        width: 100%;
+        height: 141px;
+    }
+
+    .contacts_container {
+        max-width: 329px;
+    }
+
+    .contacts_container1 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+        padding-top: 15px;
+        font-size: 11px;
+    }
+
+    .contacts_phoneblock {
+        margin-top: 0;
+    }
+
+    .contacts_iconimage {
+        height: 16px;
+    }
+
+    .contacts_container2 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+
+    .contacts_icon {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .contacts_address, .contacts_phone {
+        margin-left: 15px;
+    }
+
+    .contacts_callbutton {
+        margin: 20px 80px 0;
+        font-size: 14px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    /* FOOTER */
+    .footer_inner {
+        height: 73px;
+    }
+
+    .footer_logo {
+        font-size: 36px;
+        margin: 0 auto;
+    }
+
+    .footer_navbar {
+        display: none;
+    }
+
+    /* POPUP */
+    .popup_call {
+        height: 215px;
+        width: 300px;
+        padding-top: 20px;
+    }
+
+    .popup_call_cross {
+        top: 8px;
+        right: 14px;
+    }
+
+    .popup_call_crossimage {
+        content: url("../images/cross_bold.svg");
+        width: 10px;
+    }
+
+    .popup_call_header {
+        font-size: 20px;
+    }
+
+    .popup_call_content {
+        margin-top: 27px;
+        max-width: 245px;
+        font-size: 12px;
+    }
+
+    .popup_call_input {
+        width: 238px;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .popup_call_button {
+        font-size: 12px;
+        margin-top: 36px;
+        padding: 7px 17px;
+        border-radius: 5px;
+    }
+
+    /* ARROW UP */
+    .arrowup {
+        left: calc((100% - min(100%, 375px)) / 2 + 18px);
+        bottom: 18px;
+        width: 47px;
+        height: 47px;
+    }
+
+    .arrowup_image {
+        padding: 0;
+        margin-left: 10px;
+        width: 28px;
+    }
+}
